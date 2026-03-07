@@ -1,0 +1,29 @@
+// Ignore node modules
+node_modules
+
+// Ignore build output
+dist
+
+// Ignore environment variables
+.env
+
+// Ignore logs
+logs
+*.log
+
+// Ignore OS files
+.DS_Store
+Thumbs.db
+
+// Ignore IDE files
+.vscode/
+
+// Ignore TypeScript build files
+*.tsbuildinfo
+
+// Ignore npm debug files
+npm-debug.log*
+pnpm-debug.log*
+
+
+
