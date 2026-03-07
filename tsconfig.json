@@ -35,5 +35,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "esModuleInterop": true
-  }
+  },
+  "include":["./src/**/*", "./prisma/**/*"], 
+  "exclude": ["node_modules", "dist"]
 }
