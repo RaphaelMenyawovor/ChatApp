@@ -5,8 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.ts"
   },
   "keywords": [],
   "author": "Raphael Menyawovor",
@@ -16,7 +16,8 @@
     "@types/express": "^5.0.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "socket.io": "^4.8.3"
+    "socket.io": "^4.8.3",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^25.3.5",
