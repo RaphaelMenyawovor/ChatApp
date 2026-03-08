@@ -86,6 +86,14 @@
             margin-top: 10px;
         }
 
+        .feedback {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-top: 10px;
+            padding: auto;
+            text-align: center;}
+
+
         .messages {
             display: flex;
             flex-direction: column;
@@ -237,7 +245,7 @@
     <main class="chat-screen" data-node-id="2:3">
         <header class="chat-header" data-node-id="2:4">
             <h1 data-node-id="2:6">Chat</h1>
-            <p class="status" data-node-id="2:8">Online</p>
+            <p class="status" data-node-id="2:8">2 online</p>
         </header>
 
         <section class="messages" aria-label="Conversation">
@@ -260,14 +268,19 @@
                 <p class="bubble" data-node-id="2:35">A chat interface with glassmorphism effects. It's looking pretty cool!</p>
                 <span class="time" data-node-id="2:37">10:35 AM</span>
             </article>
+
+            <article class="message-feedback">
+                <p class="feedback" data-node-id="2:35">Abishek is typing...</p>
+            </article>
+
         </section>
 
-        <footer class="composer" data-node-id="2:38">
-            <p class="composer-input" data-node-id="2:42">Type a message...</p>
-            <button class="send-btn" type="button" aria-label="Send message" data-node-id="2:43">
+        <form class="composer" data-node-id="2:38">
+            <input type="text" class="composer-input" data-node-id="2:42" aria-label="Type a message" placeholder="Type a message..."/>
+            <button class="send-btn" type="submit" aria-label="Send message" data-node-id="2:43">
                 <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
             </button>
-        </footer>
+        </form>
     </main>
 </body>
 </html>
